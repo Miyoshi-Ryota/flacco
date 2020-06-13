@@ -1,5 +1,4 @@
 library(smoof)
-library(flacco)
 library(purrr)
 
 calculateAllElaOnBBOB = function(bbob_function_id, bbob_instance_id, dimension) {

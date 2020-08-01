@@ -8,3 +8,8 @@ lhsSampling = function(lowerbound, upperbound, dimension) {
       init_sample.upper = upperbound)
     return(createInitialSample(n.obs = 50 * dimension, dim = dimension, control = ctrl))
 }
+
+calculateAllFeatures = function(x, y) {
+    feat.object = createFeatureObject(X = x, y = y, blocks = 5)
+    return(calculateFeatures(feat.object))
+}

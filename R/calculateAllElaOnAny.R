@@ -1,3 +1,6 @@
+#' @title calculate all ela on bbob
+#'
+#' @export
 
 
 lhsSampling = function(lowerbound, upperbound, dimension) {

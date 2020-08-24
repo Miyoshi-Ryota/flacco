@@ -1,7 +1,11 @@
+#' @title calculate all ela on bbob
+#'
+#' @import purrr
+#' @import smoof
+#'
+#' @export
 
 calculateAllElaOnBBOB = function(bbob_function_id, bbob_instance_id, dimension) {
-    library(smoof)
-    library(purrr)
     lowerbound = -5
     upperbound = 5
     blocks = 5
@@ -15,6 +19,6 @@ calculateAllElaOnBBOB = function(bbob_function_id, bbob_instance_id, dimension) 
     feat.object = createFeatureObject(X = X, y = y, fun = f, blocks = blocks)
     
 
-    map(listAvailableFeatureSets(), function(x) calculateFeatureSet(feat.object, set=x))
-    return(map(.x = listAvailableFeatureSets(), .f = function(x) calculateFeatureSet(feat.object, x)))
+    purrr::map(listAvailableFeatureSets(), function(x) calculateFeatureSet(feat.object, set=x))
+    return(purrr::map(.x = listAvailableFeatureSets(), .f = function(x) calculateFeatureSet(feat.object, x)))
 }

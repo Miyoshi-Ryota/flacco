@@ -14,6 +14,6 @@ lhsSampling = function(lowerbound, upperbound, dimension, numberOfSample) {
 }
 
 calculateAllFeatures = function(x, y) {
-    feat.object = createFeatureObject(X = x, y = y, blocks = 5)
+    feat.object = createFeatureObject(X = x, y = y, blocks = 5, force = TRUE)
     return(calculateFeatures(feat.object))
 }

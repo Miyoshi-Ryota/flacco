@@ -40,7 +40,6 @@ Suggests:
     rpart,
     shape,
     shiny,
-    smoof,
     testthat
 LazyData: yes
 ByteCompile: yes

@@ -41,7 +41,7 @@ Suggests:
     shape,
     shiny,
     testthat
-LazyData: yes
+LazyData: no
 ByteCompile: yes
 Version: 1.8
 Date: 2020-03-31

@@ -42,7 +42,7 @@ Suggests:
     shiny,
     testthat
 LazyData: no
-ByteCompile: yes
+ByteCompile: no
 Version: 1.8
 Date: 2020-03-31
 RoxygenNote: 7.1.0
